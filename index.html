@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="header" class="header">
+            <div class="header_section">
+                <div class="header_item headerLogo">
+                    <a href="#">Ranky</a>
+                </div>
+                <div class="header_item headerButton"><a href="#">Home</a></div>
+                <div class="header_item headerButton"><a href="#">FAQ</a></div>
+                <div class="header_item headerButton modal_win_btn"><a href="#contacts">Contacts</a></div>
+            </div>
+            <div class="header_section">
+                <div id="login_link" class="header_item headerButton modal_win_btn"><a href="#login">Login</a></div>
+                <div class="header_item headerButton modal_win_btn"><a href="#reg_win">Sign up  </a></div>
+            </div>
+        </div>
+        <!-- <div style="width: 100%; height: 75px;"></div> -->
+
+        <div>
+
+        </div>
+
+        <div id="contacts" class="modal">
+            <div class="modal_window">
+                <a id="close_modal_win" href="#header"></a>
+            <div class="overlay"></div>
+            </div>
+        </div>
+
+        <div id="login" class="modal">
+            <div id="login_win" class="modal_window">
+                <a id="close_modal_win" href="#header"></a>
+                <h1>LOGIN</h1>
+                <form action="#">
+                    <label for="username">Login</label>
+                    <input type="text" id="username" placeholder="Enter your username" required maxlength="20">
+                    <label for="form_pass">Password</label>
+                    <input type="password" id="form_pass" class="form_pass" placeholder="Enter your password" required minlength="6" maxlength="20">
+                    <span class="pass_icon" id="pass_icon"><img src="pass_icon.png" style="width: 30px; height: 30px;"></span>
+                    <a href="#pass_rec" style="color: black;">Forgot your password?</a>
+                    <input type="submit" value="Login">
+                    <label style="font-size: 15px;">Don't have an account yet? <a href="#reg_win" style="color: #444; font-size: 15px;"> create</a></label>
+                </form>
+            <div class="overlay"></div>
+            </div>
+        </div>
+
+        <div id="reg_win" class="modal">
+            <div class="modal_window">
+                <a id="close_modal_win" href="#header"></a>
+                <h1>Registration</h1>
+                <form action="#">
+                    <label for="email">Email</label>
+                    <input type="email"" id="email" placeholder="Enter your email" required>
+                    <label for="username">Login</label>
+                    <input type="text"" id="username" placeholder="Enter your username" required maxlength="20">
+                    <label for="form_pass">Password</label>
+                    <input type="password" id="form_pass_reg" class="form_pass" placeholder="Enter your password" required minlength="6" maxlength="20">
+                    <input type="password" id="form_pass_reenter" class="form_pass" placeholder="Reenter password" required minlength="6" maxlength="20">
+                    <input type="submit" value="Sign up">
+                </form>
+            <div class="overlay"></div>
+            </div>
+        </div>
+
+        <div id="pass_rec" class="modal">
+            <div class="modal_window">
+                <a id="close_modal_win" href="#header"></a>
+                <h1>Password recovery</h1>
+                <form action="#pass_rec_code">
+                    <label for="email">Email</label>
+                    <input type="email"" id="email" placeholder="Enter your email" required>
+                    <input type="submit" value="Send email">
+                </form>
+            </div>
+        </div>
+
+        <div id="pass_rec_code" class="modal">
+            <div class="modal_window">
+                <a id="close_modal_win" href="#header"></a>
+                <form action="#pass_rec_pass">
+                    <label for="code">Code</label>
+                    <input type="text"" id="code" placeholder="Enter code from email" required pattern="[0-9]{4}">
+                    <input type="submit" value="Continue">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="pass_rec_pass" class="modal">
+        <div class="modal_window">
+            <a id="close_modal_win" href="#header"></a>
+            <form action="#login">
+                <label for="form_pass">Password</label>
+                <input type="password" id="form_pass_reg" class="form_pass" placeholder="Enter your password" required minlength="6" maxlength="20">
+                <input type="password" id="form_pass_reenter" class="form_pass" placeholder="Reenter password" required minlength="6" maxlength="20">
+                <input type="submit" value="Recovery">
+            </form>
+        <div class="overlay"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

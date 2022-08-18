@@ -1,0 +1,343 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+::-webkit-scrollbar{
+	width: 7px;
+}
+
+::-webkit-scrollbar-track{
+	background: #2e3338;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #202225;
+	border: 1px solid #2e3338;
+	border-radius: 50px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    /* background-image: url(https://cdn.discordapp.com/attachments/341594746667401217/1009215755235102772/1303422-Tsukasa-YuzakiTsukasa.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover; */
+}
+
+.header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    /* position: fixed;
+    width: 99.2%; */
+    justify-content: space-between;
+    padding: 10px;
+    background-color: silver;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header_section{
+    display: flex;
+    align-items: center;
+}
+
+.header_item{
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-left: 5px;
+    transition: 0.1s linear;
+}
+
+.header_item:hover{
+    background-color: #ff9900;
+    border-radius: 4px;
+    box-shadow: 1px 5px 10px -5px black;
+}
+
+.headerLogo{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.modal{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s linear;
+}
+
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+#close_modal_win{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: auto;
+    z-index: -1;
+}
+
+.modal_window{
+    width: 500px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    background-color: silver;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: auto;
+}
+
+.btn_close{
+    margin-left: 470px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    opacity: 0.7;
+}
+
+.btn_close:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#login_win form{
+    padding: 80px 30px;
+}
+
+#login_win h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#login_win label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#login_win input{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+#login_win input[type="text"], input[type="email"], input[type="password"]{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+#login_win input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-bottom: 3px solid black;
+    transition: 0.1s linear;
+}
+
+#login_win input[type="submit"]:hover{
+    background-color: rgba(0, 255, 255, 0.534);
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+#reg_win form{
+    padding: 80px 30px;
+}
+
+#reg_win h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#reg_win label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#reg_win input{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+#reg_win input[type="text"], input[type="password"]{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+#reg_win input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-bottom: 3px solid black;
+    transition: 0.1s linear;
+}
+
+#reg_win input[type="submit"]:hover{
+    background-color: rgba(0, 255, 255, 0.534);
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+#pass_rec form{
+    padding: 80px 30px;
+}
+
+#pass_rec h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#pass_rec label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#pass_rec input{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+#pass_rec input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-bottom: 3px solid black;
+    transition: 0.1s linear;
+}
+
+#pass_rec input[type="submit"]:hover{
+    background-color: rgba(0, 255, 255, 0.534);
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+#pass_rec_code form{
+    padding: 80px 30px;
+}
+
+#pass_rec_code input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+#pass_rec_code input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-bottom: 3px solid black;
+    transition: 0.1s linear;
+}
+
+#pass_rec_code input[type="submit"]:hover{
+    background-color: rgba(0, 255, 255, 0.534);
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+#pass_rec_pass form{
+    padding: 80px 30px;
+}
+
+#pass_rec_pass input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+#pass_rec_pass input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: rgba(0, 255, 255, 0.158);
+    border-bottom: 3px solid black;
+    transition: 0.1s linear;
+}
+
+#pass_rec_pass input[type="submit"]:hover{
+    background-color: rgba(0, 255, 255, 0.534);
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+#login_win .pass_icon{
+    position: absolute;
+    margin-top: -53px;
+    margin-left: 409px;
+    opacity: 50%;
+    -webkit-filter: invert(50%);
+    transition: 0.1s linear;
+}
+
+#login_win .pass_icon:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
