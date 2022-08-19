@@ -328,7 +328,7 @@ body{
     cursor: pointer;
 }
 
-#login_win .pass_icon{
+.pass_icon{
     position: absolute;
     margin-top: -53px;
     margin-left: 409px;
@@ -337,7 +337,7 @@ body{
     transition: 0.1s linear;
 }
 
-#login_win .pass_icon:hover{
+.pass_icon:hover{
     opacity: 100%;
     cursor: pointer;
 }

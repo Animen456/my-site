@@ -58,11 +58,12 @@
                 <h1>Registration</h1>
                 <form action="#">
                     <label for="email">Email</label>
-                    <input type="email"" id="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" placeholder="Enter your email" required>
                     <label for="username">Login</label>
-                    <input type="text"" id="username" placeholder="Enter your username" required maxlength="20">
+                    <input type="text" id="username" placeholder="Enter your username" required maxlength="20">
                     <label for="form_pass">Password</label>
-                    <input type="password" id="form_pass_reg" class="form_pass" placeholder="Enter your password" required minlength="6" maxlength="20">
+                    <input type="password" id="form_pass_reg" class="form_pass" placeholder="Enter password" required minlength="6" maxlength="20">
+                    <span class="pass_icon" id="pass_icon_reg"><img src="pass_icon.png" style="width: 30px; height: 30px;"></span>
                     <input type="password" id="form_pass_reenter" class="form_pass" placeholder="Reenter password" required minlength="6" maxlength="20">
                     <input type="submit" value="Sign up">
                 </form>
@@ -99,8 +100,9 @@
             <a id="close_modal_win" href="#header"></a>
             <form action="#login">
                 <label for="form_pass">Password</label>
-                <input type="password" id="form_pass_reg" class="form_pass" placeholder="Enter your password" required minlength="6" maxlength="20">
-                <input type="password" id="form_pass_reenter" class="form_pass" placeholder="Reenter password" required minlength="6" maxlength="20">
+                <input type="password" id="form_pass_rec" class="form_pass" placeholder="Enter password" required minlength="6" maxlength="20">
+                <span class="pass_icon" id="pass_icon_rec"><img src="pass_icon.png" style="width: 30px; height: 30px;"></span>
+                <input type="password" id="form_pass_reenter_rec" class="form_pass" placeholder="Reenter password" required minlength="6" maxlength="20">
                 <input type="submit" value="Recovery">
             </form>
         <div class="overlay"></div>
